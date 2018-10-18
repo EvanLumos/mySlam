@@ -68,13 +68,13 @@ CMAKE_BINARY_DIR = /home/raopei/mySlam/cmake-build-debug
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
-src/all: src/CMakeFiles/visualOdometry.dir/all
+src/all: src/CMakeFiles/slam.dir/all
 src/all: src/CMakeFiles/slambase.dir/all
 
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
-src/clean: src/CMakeFiles/visualOdometry.dir/clean
+src/clean: src/CMakeFiles/slam.dir/clean
 src/clean: src/CMakeFiles/slambase.dir/clean
 
 .PHONY : src/clean
@@ -85,39 +85,39 @@ src/preinstall:
 .PHONY : src/preinstall
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/visualOdometry.dir
+# Target rules for target src/CMakeFiles/slam.dir
 
 # All Build rule for target.
-src/CMakeFiles/visualOdometry.dir/all: src/CMakeFiles/slambase.dir/all
-	$(MAKE) -f src/CMakeFiles/visualOdometry.dir/build.make src/CMakeFiles/visualOdometry.dir/depend
-	$(MAKE) -f src/CMakeFiles/visualOdometry.dir/build.make src/CMakeFiles/visualOdometry.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raopei/mySlam/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target visualOdometry"
-.PHONY : src/CMakeFiles/visualOdometry.dir/all
+src/CMakeFiles/slam.dir/all: src/CMakeFiles/slambase.dir/all
+	$(MAKE) -f src/CMakeFiles/slam.dir/build.make src/CMakeFiles/slam.dir/depend
+	$(MAKE) -f src/CMakeFiles/slam.dir/build.make src/CMakeFiles/slam.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raopei/mySlam/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target slam"
+.PHONY : src/CMakeFiles/slam.dir/all
 
 # Include target in all.
-all: src/CMakeFiles/visualOdometry.dir/all
+all: src/CMakeFiles/slam.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/visualOdometry.dir/rule: cmake_check_build_system
+src/CMakeFiles/slam.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raopei/mySlam/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/visualOdometry.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slam.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raopei/mySlam/cmake-build-debug/CMakeFiles 0
-.PHONY : src/CMakeFiles/visualOdometry.dir/rule
+.PHONY : src/CMakeFiles/slam.dir/rule
 
 # Convenience name for target.
-visualOdometry: src/CMakeFiles/visualOdometry.dir/rule
+slam: src/CMakeFiles/slam.dir/rule
 
-.PHONY : visualOdometry
-
-# clean rule for target.
-src/CMakeFiles/visualOdometry.dir/clean:
-	$(MAKE) -f src/CMakeFiles/visualOdometry.dir/build.make src/CMakeFiles/visualOdometry.dir/clean
-.PHONY : src/CMakeFiles/visualOdometry.dir/clean
+.PHONY : slam
 
 # clean rule for target.
-clean: src/CMakeFiles/visualOdometry.dir/clean
+src/CMakeFiles/slam.dir/clean:
+	$(MAKE) -f src/CMakeFiles/slam.dir/build.make src/CMakeFiles/slam.dir/clean
+.PHONY : src/CMakeFiles/slam.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/slam.dir/clean
 
 .PHONY : clean
 
@@ -128,7 +128,7 @@ clean: src/CMakeFiles/visualOdometry.dir/clean
 src/CMakeFiles/slambase.dir/all:
 	$(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/depend
 	$(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raopei/mySlam/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target slambase"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raopei/mySlam/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target slambase"
 .PHONY : src/CMakeFiles/slambase.dir/all
 
 # Include target in all.

@@ -11,6 +11,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.12.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.12.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.12.2/CMakeSystem.cmake"
+  "../cmake_modules/FindCSparse.cmake"
+  "../cmake_modules/FindG2O.cmake"
   "../src/CMakeLists.txt"
   "/home/raopei/下载/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCInformation.cmake"
   "/home/raopei/下载/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCXXInformation.cmake"
@@ -252,6 +254,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/visualOdometry.dir/DependInfo.cmake"
+  "src/CMakeFiles/slam.dir/DependInfo.cmake"
   "src/CMakeFiles/slambase.dir/DependInfo.cmake"
   )

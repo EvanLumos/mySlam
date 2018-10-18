@@ -5,7 +5,7 @@
 		<Option title="mySlam"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5OpenGL\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Sql\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKitWidgets\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKit\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\;CMake Files\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\usr\lib\cmake\vtk-6.2\;CMake Files\..\..\..\usr\lib\cmake\vtk-6.2\Modules\;CMake Files\..\..\..\usr\local\;CMake Files\..\..\..\usr\local\share\;CMake Files\..\..\..\usr\local\share\OpenCV\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5OpenGL\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Sql\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKitWidgets\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5WebKit\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\;CMake Files\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\usr\lib\cmake\vtk-6.2\;CMake Files\..\..\..\usr\lib\cmake\vtk-6.2\Modules\;CMake Files\..\..\..\usr\local\;CMake Files\..\..\..\usr\local\share\;CMake Files\..\..\..\usr\local\share\OpenCV\;CMake Files\cmake_modules\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/raopei/mySlam/cmake-build-debug"/>
@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/raopei/mySlam/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="visualOdometry">
-				<Option output="/home/raopei/mySlam/bin/visualOdometry" prefix_auto="0" extension_auto="0"/>
+			<Target title="slam">
+				<Option output="/home/raopei/mySlam/bin/slam" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/raopei/mySlam/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -80,6 +80,7 @@
 					<Add directory="/usr/include/pcl-1.7"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
@@ -95,14 +96,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/raopei/mySlam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 visualOdometry"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/raopei/mySlam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 slam"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/raopei/mySlam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/raopei/mySlam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/raopei/mySlam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="visualOdometry/fast">
-				<Option output="/home/raopei/mySlam/bin/visualOdometry" prefix_auto="0" extension_auto="0"/>
+			<Target title="slam/fast">
+				<Option output="/home/raopei/mySlam/bin/slam" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/raopei/mySlam/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -144,6 +145,7 @@
 					<Add directory="/usr/include/pcl-1.7"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
@@ -159,7 +161,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/raopei/mySlam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 visualOdometry/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/raopei/mySlam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 slam/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/raopei/mySlam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/raopei/mySlam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/raopei/mySlam/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
@@ -208,6 +210,7 @@
 					<Add directory="/usr/include/pcl-1.7"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
@@ -272,6 +275,7 @@
 					<Add directory="/usr/include/pcl-1.7"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
@@ -294,11 +298,11 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/raopei/mySlam/src/slam.cpp">
+			<Option target="slam"/>
+		</Unit>
 		<Unit filename="/home/raopei/mySlam/src/slamBase.cpp">
 			<Option target="slambase"/>
-		</Unit>
-		<Unit filename="/home/raopei/mySlam/src/visualOdometry.cpp">
-			<Option target="visualOdometry"/>
 		</Unit>
 		<Unit filename="/home/raopei/mySlam/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
@@ -890,6 +894,12 @@
 		</Unit>
 		<Unit filename="/home/raopei/mySlam/../../../usr/local/share/OpenCV/OpenCVModules.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/raopei/mySlam/cmake_modules/FindCSparse.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
+		</Unit>
+		<Unit filename="/home/raopei/mySlam/cmake_modules/FindG2O.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
