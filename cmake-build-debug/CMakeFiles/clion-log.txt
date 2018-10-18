@@ -1,0 +1,46 @@
+/home/raopei/下载/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/raopei/mySlam
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   thread
+--   date_time
+--   iostreams
+--   serialization
+--   chrono
+--   atomic
+--   regex
+-- Checking for module 'libopenni2'
+--   No package 'libopenni2' found
+-- Could NOT find OpenNI2 (missing: OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+** WARNING ** io features related to openni2 will be disabled
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-6.2/VTKTargets.cmake"
+but not all the files it references.
+
+-- Checking for module 'libopenni2'
+--   No package 'libopenni2' found
+-- Could NOT find OpenNI2 (missing: OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+** WARNING ** visualization features related to openni2 will be disabled
+-- looking for PCL_COMMON
+-- looking for PCL_OCTREE
+-- looking for PCL_IO
+-- looking for PCL_KDTREE
+-- looking for PCL_GEOMETRY
+-- looking for PCL_SEARCH
+-- looking for PCL_VISUALIZATION
+-- looking for PCL_SAMPLE_CONSENSUS
+-- looking for PCL_FILTERS
+-- Configuring done
+WARNING: Target "visualOdometry" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.
+WARNING: Target "visualOdometry" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.
+WARNING: Target "slambase" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.
+-- Generating done
+-- Build files have been written to: /home/raopei/mySlam/cmake-build-debug

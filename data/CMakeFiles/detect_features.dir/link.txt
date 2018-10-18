@@ -1,0 +1,1 @@
+g++    -g    -rdynamic CMakeFiles/detect_features.dir/detectFeatures.cpp.o  -o ../bin/detect_features  -L/home/raopei/mySlam/lib -Wl,-rpath,/home/raopei/mySlam/lib 
