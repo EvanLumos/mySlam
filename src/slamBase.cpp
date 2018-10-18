@@ -84,11 +84,11 @@ RESULT_OF_PNP estimateMotion( FRAME& frame1, FRAME& frame2, CAMERA_INTRINSIC_PAR
         sumDis += matches[i].distance;
 
     }
-    minDis = sumDis / 4;
+    minDis = sumDis / (matches.size());
     cout<<"minDis:"<<minDis<<endl;
     for ( size_t i=0; i<matches.size(); i++ )
     {
-        if (matches[i].distance < (good_match_threshold*minDis + 10))
+        if (matches[i].distance < (good_match_threshold*minDis) + 1)
             goodMatches.push_back( matches[i] );
     }
 

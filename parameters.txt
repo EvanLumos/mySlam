@@ -6,7 +6,7 @@
 detector=ORB
 descriptor=ORB
 # 筛选good match的倍数
-good_match_threshold=10
+good_match_threshold=8
 
 # camera
 camera.cx=325.5;
@@ -19,7 +19,7 @@ camera.scale=1000.0;
 # 数据相关
 # 起始与终止索引
 start_index=1
-end_index=700
+end_index=100
 # 数据所在目录
 rgb_dir=/home/raopei/文档/slamdataset/rgb_png/
 rgb_extension=.png
